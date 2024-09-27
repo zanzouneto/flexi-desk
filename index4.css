@@ -1,0 +1,274 @@
+body{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: rgb(53, 51, 51);
+    color: aliceblue;
+}
+::selection{
+    background-color: cadetblue;
+}
+.herosection{
+    height: 400vh;
+    position: relative;
+}
+.hero{
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.wrapper{
+    position: sticky;
+    width: 100%;
+    height: 100%;
+}
+.blur-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 5; 
+}
+.scroll-text{
+    position: fixed;
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 0;
+    white-space: nowrap;
+    z-index: 6;
+}
+.scroll-text span.fl {
+    position: relative;
+    display: inline-block;
+    font-size: 15vw;
+    line-height: 15vw;
+    font-family: fantasy, sans-serif;
+}
+h1, h2, h3{
+    font-family: fantasy, sans-serif;
+}
+h1{
+    font-size: 10vw;
+    line-height: 10vw;
+    margin: 40px 0;
+}
+h2{
+    font-size: 45px;
+    line-height: 60px;
+    margin: 40px 0;
+    font-weight: 200;
+}
+h3{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 40px 0;
+}
+.wrapper h1,.wrapper p{
+    position: relative;
+    z-index: 6;
+}
+.price{
+    text-align: center;
+    background-color: cadetblue;
+    width: 20vw;
+    border-radius: 4px;
+    margin: auto;
+    font-style: italic;
+    font-size: 3vw;
+    line-height: 4vw;
+}
+p {
+    font-size: 20px;
+    line-height: 40px;
+    max-width: 900px;
+}
+.title, .end-title{
+    font-size: 9vw;
+    line-height: 10vw;
+    text-align: center;
+    font-weight: 400;
+    z-index: 6;
+}  
+.hero-end{
+    position: relative;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
+}
+.hero-end-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 6; 
+}
+.end-title, .hero-end button{
+    z-index: 6;
+}
+.subhead{
+    font-size: 5vw;
+    text-align: center;
+}
+.scroll-text.bottom {
+    font-weight: 600;
+}
+.scroll-text.top{
+    bottom: -31vw;
+    left: 19%;
+}
+/* background image reveal */
+.content-section {
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    position: relative; 
+}
+.content-section::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(assets/istockphoto-1473163791-612x612.jpg) center center / cover no-repeat;
+    z-index: -1; 
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; 
+}
+.visible::before {
+    opacity: 1;
+}
+.reason-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 250px 0;
+}
+.reason-container{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+.reason {
+    height: 70vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
+    padding: 20px; 
+    text-align: center;
+    margin: 20px;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: #00000052 5px 3px 20px 3px;
+}
+.reason-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+    max-width: 25vw; 
+}
+.first{
+    align-items: flex-end;
+    text-align: end;
+}
+.a {
+    background-image: 
+        radial-gradient(circle, rgba(255, 255, 255, 0.1) 30%, rgb(255, 255, 255) 100%), 
+        url('assets/717r1XtzMGL._AC_UF894\,1000_QL80_.jpg');
+}
+.b {
+    background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.1) 30%, rgb(255, 255, 255) 100%), 
+    url('assets/best-standing-desks-Australia.png'); 
+}
+.c {
+    background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.1) 30%, rgb(255, 255, 255) 100%), 
+    url('assets/watchclos-standing-desk.jpg'); 
+}
+.d {
+    background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.1) 30%, rgb(255, 255, 255) 100%), 
+    url('assets/sequel-lift-standing-desk-6152-BDI-executive-sit-stand-desk-walnut-hero-3200.webp');
+}
+.e {
+    background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.1) 30%, rgb(255, 255, 255) 100%), 
+    url('assets/drakefrancissir-standing-desk-02.jpg'); 
+}
+.f {
+    background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.1) 30%, rgb(255, 255, 255) 100%), 
+    url('assets/thomaswde-standing-desk-08.jpg'); 
+}
+.reason h2, .reason p {
+    margin: 0;
+    padding: 20px;
+}
+.backlight{
+    z-index: 1;
+    padding: 20px;
+    border-radius: 10px; 
+}
+/* .backlight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.361); 
+    filter: blur(20px);
+    z-index: -1; 
+    border-radius: 10px; 
+} */
+button{
+    padding: 20px 50px;
+    border-radius: 10px;
+    background-color: black;
+    color: inherit;
+    cursor: pointer;
+    margin: 30px 0;
+    transition: ease 0.5s;
+    font-size: 25px;
+    font-weight: bolder;
+    border: none;
+}
+button:hover{
+    background-color: cadetblue;
+    color: #000000;
+}
+/* youtube */
+video{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+/* Tablet styles */
+@media (min-width: 600px) {
+    body {
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 900px) {
+    body {
+    }
+}
