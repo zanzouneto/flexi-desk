@@ -4,6 +4,7 @@ body{
     margin: 0;
     background-color: rgb(53, 51, 51);
     color: aliceblue;
+    line-height: 230%;
 }
 ::selection{
     background-color: cadetblue;
@@ -57,19 +58,19 @@ h1, h2, h3{
 }
 h1{
     font-size: 10vw;
-    line-height: 10vw;
     margin: 40px 0;
 }
 h2{
     font-size: 45px;
-    line-height: 60px;
     margin: 40px 0;
     font-weight: 200;
 }
 h3{
-    font-size: 50px;
-    line-height: 60px;
     margin: 40px 0;
+    opacity: 0.3;
+    font-size: 210px;
+    margin-left: -150px;
+    position: absolute;
 }
 .wrapper h1,.wrapper p{
     position: relative;
@@ -82,18 +83,15 @@ h3{
     margin: auto;
     font-style: italic;
     font-size: 3vw;
-    line-height: 4vw;
 }
 p {
     font-size: 20px;
-    line-height: 40px;
     max-width: 900px;
 }
 .title, .end-title{
     font-size: 9vw;
-    line-height: 10vw;
     text-align: center;
-    font-weight: 400;
+    font-weight: 900;
     z-index: 6;
 }  
 .hero-end{
@@ -198,17 +196,17 @@ p {
         radial-gradient(circle, rgba(255, 255, 255, 0.1) 30%, rgb(255, 255, 255) 100%), 
         url('assets/717r1XtzMGL._AC_UF894\,1000_QL80_.jpg');
 }
-.b {
+.d {
     background-image: 
     radial-gradient(circle, rgba(255, 255, 255, 0.1) 30%, rgb(255, 255, 255) 100%), 
-    url('assets/best-standing-desks-Australia.png'); 
+    url('assets/nickccal-standing-desk-12.jpeg');
 }
 .c {
     background-image: 
     radial-gradient(circle, rgba(255, 255, 255, 0.1) 30%, rgb(255, 255, 255) 100%), 
     url('assets/watchclos-standing-desk.jpg'); 
 }
-.d {
+.b {
     background-image: 
     radial-gradient(circle, rgba(255, 255, 255, 0.1) 30%, rgb(255, 255, 255) 100%), 
     url('assets/sequel-lift-standing-desk-6152-BDI-executive-sit-stand-desk-walnut-hero-3200.webp');
@@ -270,13 +268,68 @@ video{
 }
 
 /* Tablet styles */
-@media (min-width: 600px) {
-    body {
+@media (max-width: 600px) {
+    .scroll-text span.fl {
+        font-size: 30vw;
+        left: 35%;
+    }
+    .scroll-text.top {
+        bottom: -39vw;
+        left: 20%;
+    }
+    .title, .end-title {
+        font-size: 15vw;
+    }
+    .price{
+        font-size: 6vw;
+        padding: 0 40px;
+        /* margin: 0 auto; */
+    }
+    .reason-container {
+        display: flex;
+        align-items: stretch;
+        gap: 2vw;
+        flex-direction: column;
+    }
+    .reason-text{
+        max-width: none;
+    }
+    p{
+        max-width: none;
+    }
+    .reason-text {
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        margin-left: -90px;
+        opacity: 0.2;
+    }
+    .reason{
+        width: 90vw;
+        height: 40vh;
+        margin: 0;
+    }
+    .reason-container{
+        margin: 20px;
     }
 }
 
 /* Desktop styles */
-@media (min-width: 900px) {
-    body {
+@media (min-width: 601px) and (max-width: 900px) {
+    h3 {
+        font-size: 20vw;
+    }
+    h2{
+        font-size: 6vw;
+    }
+    button{
+        font-size: 18px;
     }
 }
