@@ -176,6 +176,11 @@ p {
     border-radius: 30px;
     align-items: center;
     box-shadow: #00000052 5px 3px 20px 3px;
+    transition: 2s cubic-bezier(0.25, 0.1, 0.25, 1);
+    scale: 1;
+}
+.reason:hover{
+    scale: 1.05;
 }
 .reason-text {
     display: flex;
@@ -221,6 +226,7 @@ p {
     margin: 0;
     padding: 20px;
 }
+
 .backlight{
     z-index: 1;
     padding: 20px;
