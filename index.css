@@ -124,38 +124,16 @@ p {
     bottom: -31vw;
     left: 19%;
 }
+
+
 /* background image reveal */
-.content-section {
-    height: 100vh;
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    position: relative; 
-}
-.content-section::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(assets/istockphoto-1473163791-612x612.jpg) center center / cover no-repeat;
-    z-index: -1; 
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out; 
-}
-.visible::before {
-    opacity: 1;
-}
-.reason-section{
+.reason-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 250px 0;
 }
-.reason-container{
+.reason-container {
     display: flex;
     align-items: center;
     gap: 2vw;
@@ -163,35 +141,21 @@ p {
 .reason {
     height: 70vh;
     width: 60vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     position: relative;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    color: rgb(0, 0, 0);
-    padding: 20px; 
-    text-align: center;
+    background-attachment: fixed; 
     margin: 20px;
     border-radius: 30px;
-    align-items: center;
     box-shadow: #00000052 5px 3px 20px 3px;
-    transition: 2s cubic-bezier(0.25, 0.1, 0.25, 1);
-    scale: 1;
+    color: rgb(0, 0, 0);
 }
-.reason:hover{
-    scale: 1.05;
-}
+
 .reason-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;   
     max-width: 25vw; 
-}
-.first{
-    align-items: flex-end;
-    text-align: end;
 }
 .a {
     background-image: 
@@ -227,7 +191,6 @@ p {
     margin: 0;
     padding: 20px;
 }
-
 .backlight{
     z-index: 1;
     padding: 20px;
@@ -245,6 +208,10 @@ p {
     z-index: -1; 
     border-radius: 10px; 
 }
+
+
+
+
 button{
     padding: 20px 50px;
     border-radius: 10px;
@@ -301,11 +268,10 @@ video{
         max-width: none;
     }
     .reason-text {
-        max-width: none;
+        max-width: 90vw;
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        padding: 20px;
     }
     h2{
         font-size: 30px;
