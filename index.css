@@ -285,6 +285,10 @@ video{
         height: 40vh;
         margin: 0;
     }
+    .blur-overlay {
+        backdrop-filter: blur(10px); /* Apply blur effect */
+        background-color: rgba(0, 0, 0, 0); /* Transparent for blur */
+    }
 }
 
 /* Desktop styles */
