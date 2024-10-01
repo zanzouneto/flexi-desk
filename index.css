@@ -55,6 +55,7 @@ body{
 h1, h2, h3{
     font-family: "Saira", sans-serif;
     font-weight: 900;
+    line-height: 130%;
 }
 h1{
     font-size: 10vw;
@@ -83,6 +84,7 @@ h3{
     margin: auto;
     font-style: italic;
     font-size: 3vw;
+    line-height: 180%;
 }
 p {
     font-size: 20px;
@@ -231,18 +233,18 @@ p {
     padding: 20px;
     border-radius: 10px; 
 }
-/* .backlight::before {
+.backlight::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.361); 
+    /* background-color: rgba(255, 255, 255, 0.361);  */
     filter: blur(20px);
     z-index: -1; 
     border-radius: 10px; 
-} */
+}
 button{
     padding: 20px 50px;
     border-radius: 10px;
@@ -290,6 +292,7 @@ video{
         align-items: stretch;
         gap: 2vw;
         flex-direction: column;
+        margin: 20px 0;
     }
     .reason-text{
         max-width: none;
@@ -315,9 +318,6 @@ video{
         width: 90vw;
         height: 40vh;
         margin: 0;
-    }
-    .reason-container{
-        margin: 20px;
     }
 }
 
