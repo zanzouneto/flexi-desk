@@ -67,7 +67,7 @@ h2{
     font-weight: 200;
 }
 h3{
-    margin: 40px 0;
+    margin: -40px 0;
     opacity: 0.3;
     font-size: 210px;
     margin-left: -150px;
@@ -124,7 +124,9 @@ p {
     bottom: -31vw;
     left: 19%;
 }
-
+.reason-section h1{
+    padding: 0 20px;
+}
 
 /* background image reveal */
 .reason-section {
