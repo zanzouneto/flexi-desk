@@ -90,6 +90,7 @@ h3{
 p {
     font-size: 20px;
     max-width: 900px;
+    font-weight: 100;
 }
 .title, .end-title{
     font-size: 9vw;
@@ -123,9 +124,8 @@ p {
 }
 .scroll-text.top{
     bottom: -31vw;
-    left: 19%;
 }
-.reason-section h1{
+.reason-section h1, .colors-section h1{
     padding: 0 20px;
 }
 
@@ -234,6 +234,41 @@ video{
     width: 100vw;
     object-fit: cover;
 }
+.colors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 60px 0 0 0;
+}
+.color{
+    width: 30%;
+    height: 20vw;
+    border-radius: 20px;
+}
+.z{
+    background-image: url(assets/wood\ black.jpg);
+}
+.y{
+    background-image: url(assets/wood\ light.webp);
+}
+.x{
+    background-image: url(assets/wood\ white.jpg);
+}
+.m, .n{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+    width: 40vw;
+    height: 30vw;
+}
+.m{
+    background-image: url(assets/specs\ 1.jpg);
+}
+.n{
+    background-image: url(assets/specss\ 2.webp);
+}
+
 
 /* Tablet styles */
 @media (max-width: 600px) {
@@ -252,6 +287,9 @@ video{
         font-size: 6vw;
         padding: 0 40px;
         /* margin: 0 auto; */
+    }
+    .reason-section{
+        margin: 50px 0;
     }
     .reason-container {
         display: flex;
@@ -283,6 +321,23 @@ video{
         width: 90vw;
         height: 40vh;
         margin: 0;
+    }
+    .colors {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 60px 0 0 0;
+        align-items: stretch;
+        width: 100vw;
+        gap: 20px;
+    }
+    .color{
+        height: 30vw;
+        margin: 0 20px;
+        width: auto;
+    }
+    .m,.n{
+        height: 60vw;
     }
 }
 /* Desktop styles */
