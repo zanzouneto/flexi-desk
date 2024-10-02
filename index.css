@@ -152,24 +152,8 @@ p {
     border-radius: 30px;
     box-shadow: #00000052 5px 3px 20px 3px;
     color: rgb(0, 0, 0);
-    scale: 1;
     transition: ease-in-out 0.5;
 }
-.reason:hover{
-    scale: 1.03;
-}
-.reason {
-    -webkit-transform: scale(1); /* For older versions of Safari and Chrome */
-    -moz-transform: scale(1); /* For older Firefox versions */
-    -webkit-transition: -webkit-transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-    -moz-transition: -moz-transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-}
-
-.reason:hover {
-    -webkit-transform: scale(1.03); /* Safari and Chrome hover effect */
-    -moz-transform: scale(1.03); /* Firefox hover effect */
-}
-
 .reason-text {
     display: flex;
     flex-direction: column;
@@ -227,10 +211,6 @@ p {
     z-index: -1; 
     border-radius: 10px; 
 }
-
-
-
-
 button{
     padding: 20px 50px;
     border-radius: 10px;
@@ -305,7 +285,6 @@ video{
         margin: 0;
     }
 }
-
 /* Desktop styles */
 @media (min-width: 601px) and (max-width: 900px) {
     h3 {

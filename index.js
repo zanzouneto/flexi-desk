@@ -15,4 +15,3 @@ function parallaxScroll(){
     $('.title').css({'transform': 'translate3d(0,' + scrolled * -0.5 + 'px, 0)'});  
     $('.price').css({'transform': 'translate3d(0,' + scrolled * -0.5 + 'px, 0)'}); 
 }
-
