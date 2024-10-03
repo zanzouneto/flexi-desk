@@ -221,7 +221,7 @@ button{
     margin: 30px 0;
     transition: ease 0.5s;
     font-size: 25px;
-    font-weight: bolder;
+    font-weight: 200;
     border: none;
     font-family: "Saira", sans-serif;
 }
@@ -294,16 +294,21 @@ video{
         font-size: 30vw;
         left: 35%;
     }
+    .scroll-text.scroll-text.bottom {
+        left: 12%;
+    }
     .scroll-text.top {
         bottom: -39vw;
-        left: 20%;
+        left: 12%;
     }
     .title, .end-title {
         font-size: 15vw;
+        line-height: 90%;
     }
     .price{
         font-size: 6vw;
         padding: 0 40px;
+        max-width: 80vw;
         /* margin: 0 auto; */
     }
     .reason-section{
@@ -342,6 +347,7 @@ video{
         height: 40vh;
         margin: 0;
         border-radius: 0;
+        background-attachment: local ;
     }
     .colors {
         display: flex;
