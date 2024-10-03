@@ -378,4 +378,7 @@ video{
     button{
         font-size: 18px;
     }
+    .reason{
+        background-attachment: local;
+    }
 }
