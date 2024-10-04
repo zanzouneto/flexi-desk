@@ -104,6 +104,7 @@ p {
     justify-content: center; 
     align-items: center;
     overflow: hidden;
+    top: 50px;
 }
 .hero-end-container{
     display: flex;
@@ -292,7 +293,19 @@ video{
 .n{
     background-image: url(assets/specss\ 2.webp);
 }
-
+.j,.k,.l{
+    background-size: cover;
+    height: 30vw;
+} 
+.j{
+    background-image: url(assets/item\ 1\ a.webp);
+}
+.k{
+    background-image: url(assets/item\ 2\ a.webp);
+}
+.l{
+    background-image: url(assets/item\ 3\ a.jpg);
+}
 
 /* Tablet styles */
 @media (max-width: 600px) {
@@ -370,6 +383,9 @@ video{
         width: auto;
     }
     .m,.n{
+        height: 60vw;
+    }
+    .j,.k,.l{
         height: 60vw;
     }
     .verticle{
