@@ -235,6 +235,12 @@ video{
     width: 100vw;
     object-fit: cover;
 }
+.verticle{
+    display: none;
+}
+.horizontal{
+    display: block;
+}
 .colors{
     display: flex;
     flex-direction: row;
@@ -308,7 +314,7 @@ video{
     .price{
         font-size: 6vw;
         padding: 0 40px;
-        max-width: 80vw;
+        max-width: 70vw;
         /* margin: 0 auto; */
     }
     .reason-section{
@@ -366,6 +372,12 @@ video{
     .m,.n{
         height: 60vw;
     }
+    .verticle{
+        display: block;
+    }
+    .horizontal{
+        display: none;
+    }
 }
 /* Desktop styles */
 @media (min-width: 601px) and (max-width: 900px) {
@@ -380,5 +392,11 @@ video{
     }
     .reason{
         background-attachment: local;
+    }
+    .verticle{
+        display: none;
+    }
+    .horizontal{
+        display: block;
     }
 }
