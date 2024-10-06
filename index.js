@@ -5,6 +5,10 @@ $(window).scroll(function(e){
 
 function parallaxScroll(){
     var scrolled = $(window).scrollTop();
+    var maxScroll = $(window).height() * 4; // Maximum scroll limit in vh
+
+    scrolled = Math.min(scrolled, maxScroll);
+    
     $('.y1').css({'transform': 'translate3d(0,' + scrolled * -1.4 + 'px, 0)'});
     $('.y2').css({'transform': 'translate3d(0,' + scrolled * -1.6 + 'px, 0)'}); 
     $('.y3').css({'transform': 'translate3d(0,' + scrolled * -1.8 + 'px, 0)'});  
@@ -12,6 +16,13 @@ function parallaxScroll(){
     $('.y5').css({'transform': 'translate3d(0,' + scrolled * -2.2 + 'px, 0)'});  
     $('.y6').css({'transform': 'translate3d(0,' + scrolled * -2.4 + 'px, 0)'});  
 
-    $('.title').css({'transform': 'translate3d(0,' + scrolled * -0.5 + 'px, 0)'});  
-    $('.price').css({'transform': 'translate3d(0,' + scrolled * -0.5 + 'px, 0)'}); 
+    $('.title').css({'transform': 'translate3d(0,' + scrolled * -0.4 + 'px, 0)'});  
+    $('.price').css({'transform': 'translate3d(0,' + scrolled * -0.35 + 'px, 0)'}); 
+
+    $('.flexi').css({'transform': 'translate3d(0,' + scrolled * -0.4 + 'px, 0)'});  
+    $('.up').css({'transform': 'translate3d(0,' + scrolled * -0.3 + 'px, 0)'});  
+
+    $('.desk').css({'transform': 'translate3d(0,' + scrolled * +0.4 + 'px, 0)'}); 
+    $('.down').css({'transform': 'translate3d(0,' + scrolled * +0.3 + 'px, 0)'}); 
 }
+  

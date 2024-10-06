@@ -9,6 +9,11 @@ body{
 ::selection{
     background-color: cadetblue;
 }
+section{
+    background-color: rgb(53, 51, 51);
+    position: relative;
+    z-index: 250;
+}
 .herosection{
     height: 400vh;
     position: relative;
@@ -36,6 +41,42 @@ body{
     background-color: rgba(0, 0, 0, 0.4); 
     z-index: 5; 
 }
+.logo-div{
+    position: absolute;
+    z-index: 20;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.l-d-top{
+    margin-bottom: -3px;
+}
+.logo-div-inner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo{
+    opacity: 1;
+}
+.up{
+    width: 21vw;
+    height: 6vw;
+    padding-left: 10vw;
+}
+.down{
+    width: 20vw;
+    padding-right: 5vw;
+    height: 6vw;
+}
+.desk, .flexi{
+    width: 40vw;
+}
+
 .scroll-text{
     position: fixed;
     top: 80%;
