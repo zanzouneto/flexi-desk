@@ -5,7 +5,7 @@ $(window).scroll(function(e){
 
 function parallaxScroll(){
     var scrolled = $(window).scrollTop();
-    var maxScroll = $(window).height() * 4; // Maximum scroll limit in vh
+    var maxScroll = $(window).height() * 8; // Maximum scroll limit in vh
 
     scrolled = Math.min(scrolled, maxScroll);
     
@@ -25,4 +25,3 @@ function parallaxScroll(){
     $('.desk').css({'transform': 'translate3d(0,' + scrolled * +0.4 + 'px, 0)'}); 
     $('.down').css({'transform': 'translate3d(0,' + scrolled * +0.3 + 'px, 0)'}); 
 }
-  
