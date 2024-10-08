@@ -279,7 +279,7 @@
         <div class="popup-content">
           <span class="close">&times;</span>
           <h2>Get your Flexi Desk</h2>
-          <form id="contactForm" action="send-email.php" method="post">
+          <form id="contactForm" onsubmit="handleSubmit(event)">
             <!-- Name -->
             <input type="text" id="name" name="name" required placeholder="Name">
             <!-- Phone Number -->

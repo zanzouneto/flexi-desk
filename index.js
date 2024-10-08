@@ -59,3 +59,37 @@ window.addEventListener('scroll', function() {
       popupForm.style.display = 'none';
     }
   });
+
+  function handleSubmit(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const formData = new FormData(event.target);
+    const name = formData.get('name');
+    const phone = formData.get('phone');
+    const woodColor = formData.get('woodColor');
+    const size = formData.get('size');
+    const address = formData.get('address');
+    const accessories = formData.getAll('accessories').join(', ');
+
+    // Create message string
+    const message = `
+        Name: ${name}
+        Phone: ${phone}
+        Wood Color: ${woodColor}
+        Size: ${size}
+        Address: ${address}
+        Accessories: ${accessories}
+    `;
+
+    // Viber link
+    const viberNumber = 'YOUR_VIBER_NUMBER'; // Include country code, e.g., +1234567890
+    const viberLink = `viber://chat?number=${viberNumber}&text=${encodeURIComponent(message)}`;
+
+    // Telegram link
+    const telegramUsername = 'YOUR_TELEGRAM_USERNAME'; 
+    const telegramLink = `https://t.me/${zanzouneto}?start=${encodeURIComponent(message)}`;
+
+    // Open the links in new tabs or windows
+    window.open(viberLink, '_blank');
+    window.open(telegramLink, '_blank');
+}
