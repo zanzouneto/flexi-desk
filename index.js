@@ -82,8 +82,8 @@ window.addEventListener('scroll', function() {
     `;
 
     // Viber link
-    const viberNumber = '+380684330020'; 
-    const viberLink = `viber://chat?number=${viberNumber}&text=${encodeURIComponent(message)}`;
+    // const viberNumber = '+380684330020'; 
+    // const viberLink = `viber://chat?number=${viberNumber}&text=${encodeURIComponent(message)}`;
 
     // Telegram link
     const telegramUsername = 'zanzouneto'; 
