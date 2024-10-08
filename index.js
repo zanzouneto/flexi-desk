@@ -35,3 +35,27 @@ window.addEventListener('scroll', function() {
       myDiv.classList.remove('hidden');
     }
 });
+
+  // Get all buttons with the class 'contact-trigger'
+  const contactButtons = document.querySelectorAll('button');
+  const popupForm = document.querySelector('.popup');
+  const closeButton = document.querySelector('.close');
+
+  // Add click event to all buttons to show the popup
+  contactButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      popupForm.style.display = 'block';
+    });
+  });
+
+  // Close the popup when the 'x' is clicked
+  closeButton.addEventListener('click', function() {
+    popupForm.style.display = 'none';
+  });
+
+  // Close the popup if the user clicks outside of the form
+  window.addEventListener('click', function(event) {
+    if (event.target == popupForm) {
+      popupForm.style.display = 'none';
+    }
+  });

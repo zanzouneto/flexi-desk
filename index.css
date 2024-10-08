@@ -392,6 +392,73 @@ video{
     display: flex;
     justify-content: center;
 }
+
+
+/* Styles for the popup form */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vw;
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+}
+.popup-content {
+    background-color: #fff;
+    margin: 10% auto; /* Center it */
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px; /* Could be more or less, depending on screen size */
+    position: relative;
+}
+  /* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+} 
+.close:hover {
+    color: #999;
+}
+/* Form styles */
+form label {
+    display: block;
+    margin: 15px 0 5px;
+}
+form input, form select, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+form button:hover {
+    background-color: #45a049;
+}
+.check-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5PX;
+}
+input{
+    width: auto !important;
+    margin-top: 15px !important;
+}
 /* Tablet styles */
 @media (max-width: 600px) {
     section{

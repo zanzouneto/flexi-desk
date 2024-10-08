@@ -274,6 +274,54 @@
             <div class="blur-overlay"></div>
         </div>
     </section>
+    <!-- The popup form -->
+    <div class="popup">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <h2>Get your Flexi Desk</h2>
+          <form id="contactForm" action="send-email.php" method="post">
+            <!-- Name -->
+            <input type="text" id="name" name="name" required placeholder="Name">
+            <!-- Phone Number -->
+            <input type="tel" id="phone" name="phone" required placeholder="Phone number">
+            <!-- Wood Color (multiple choice) -->
+            <label for="wood-color">Wood Color:</label>
+            <select id="wood-color" name="wood-color" required>
+              <option value="dark">Dark</option>
+              <option value="medium">Medium</option>
+              <option value="white">White</option>
+            </select>
+            <!-- Size (multiple choice) -->
+            <label for="size">Size:</label>
+            <select id="size" name="size" required>
+              <option value="small">Small (150 cm)</option>
+              <option value="medium">Medium (160 cm)</option>
+              <option value="large">Large (170 cm)</option>
+            </select>
+            <!-- Accessories (checkboxes) -->
+            <label>Accessories:</label>
+            <div>
+                <div class="check-div">
+                    <input type="checkbox" id="wire-tray" name="accessories" value="wire-tray">
+                    <label for="wire-tray">Wire tray (500 UAH)</label>
+                </div>
+                <div class="check-div">
+                    <input type="checkbox" id="cup-holder" name="accessories" value="cup-holder">
+                    <label for="cup-holder">Cup holder (500 UAH)</label>
+                </div>
+                <div class="check-div">
+                    <input type="checkbox" id="headphones-hook" name="accessories" value="headphones-hook">
+                    <label for="headphones-hook">Headphones Hook(500 UAH)</label>
+                </div>
+            </div>
+            <!-- Delivery Address -->
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" required></textarea>
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="index.js"></script>
