@@ -407,7 +407,10 @@ video{
 .l{
     background-image: url(assets/item\ 3\ a.jpg);
 }
-
+.center{
+    display: flex;
+    justify-content: center;
+}
 /* Tablet styles */
 @media (max-width: 600px) {
     section{
@@ -518,8 +521,8 @@ video{
         margin-top: -50px;
     }
     swiper-container {
-        padding-bottom: 30px;
         scale: 0.8;
+        margin-bottom: -30px;
     }
     swiper-slide {
         height: 80vh;
@@ -533,6 +536,11 @@ video{
         font-size: 22px;
         font-weight: bold;
         padding: 0 0 40px 0;
+        filter: brightness(0.5) blur(1px);
+        transition: ease-in-out 0.2s;
+    }
+    .swiper-slide-active{
+        filter: brightness(1) blur(0);
     }
     .swiper-pagination-bullet {
         background-color: #fff;
