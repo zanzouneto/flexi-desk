@@ -25,3 +25,13 @@ function parallaxScroll(){
     $('.desk').css({'transform': 'translate3d(0,' + scrolled * +0.4 + 'px, 0)'}); 
     $('.down').css({'transform': 'translate3d(0,' + scrolled * +0.3 + 'px, 0)'}); 
 }
+window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY; 
+    const myDiv = document.getElementById('logo');
+    
+    if (scrollPosition > window.innerHeight * 0.8) {
+      myDiv.classList.add('hidden');
+    } else {
+      myDiv.classList.remove('hidden');
+    }
+});
