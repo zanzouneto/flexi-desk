@@ -397,6 +397,9 @@ video{
     section{
         max-width: 100vw;
     }
+    .colors-section,.reason-section{
+        padding:50px 0;
+    }
     .scroll-text span.fl {
         font-size: 30vw;
         left: 35%;
@@ -424,9 +427,6 @@ video{
         flex-direction: column;
         margin: 20px 0;
     }
-    .reason-text{
-        max-width: none;
-    }
     p{
         max-width: none;
         font-size: 16px;
@@ -451,7 +451,7 @@ video{
     h3{
         opacity: 0.8;
         font-size: 170px !important;
-        color: #ff0202;
+        color: #ff02c8;
         position: relative;
         font-weight: 900 !important;
         line-height: 100px;
@@ -515,7 +515,7 @@ video{
     :root{
         --swiper-pagination-bullet-inactive-color: #fffff4;
         --swiper-pagination-bullet-inactive-opacity: 1;
-        --swiper-pagination-color: #ff0202;
+        --swiper-pagination-color: #ff02c8;
     }    
     swiper-container {
         scale: 0.8;
