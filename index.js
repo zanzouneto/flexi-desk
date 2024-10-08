@@ -82,12 +82,12 @@ window.addEventListener('scroll', function() {
     `;
 
     // Viber link
-    const viberNumber = 'YOUR_VIBER_NUMBER'; // Include country code, e.g., +1234567890
+    const viberNumber = '+380684330020'; 
     const viberLink = `viber://chat?number=${viberNumber}&text=${encodeURIComponent(message)}`;
 
     // Telegram link
-    const telegramUsername = 'YOUR_TELEGRAM_USERNAME'; 
-    const telegramLink = `https://t.me/${zanzouneto}?start=${encodeURIComponent(message)}`;
+    const telegramUsername = 'zanzouneto'; 
+    const telegramLink = `https://t.me/${telegramUsername}?start=${encodeURIComponent(message)}`;
 
     // Open the links in new tabs or windows
     window.open(viberLink, '_blank');
