@@ -90,6 +90,6 @@ window.addEventListener('scroll', function() {
     const telegramLink = `https://t.me/${telegramUsername}?start=${encodeURIComponent(message)}`;
 
     // Open the links in new tabs or windows
-    window.open(viberLink, '_blank');
+    // window.open(viberLink, '_blank');
     window.open(telegramLink, '_blank');
 }
