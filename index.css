@@ -102,24 +102,26 @@ section{
 }
 h1, h2, h3{
     font-family: "Saira", sans-serif;
-    font-weight: 900;
+    font-weight: 900; 
     line-height: 130%;
 }
 h1{
-    font-size: 10vw;
+    text-transform: uppercase;
+    font-size: 6vw;
     margin: 40px 0;
 }
 h2{
-    font-size: 45px;
-    margin: 40px 0;
-    font-weight: 200;
+    font-size: 3vw;
+    margin: 20px 10px;
+    font-weight: 150%;
 }
 h3{
     margin: -40px 0;
-    opacity: 0.1;
+    opacity: 0.2;
     font-size: 210px;
     margin-left: -150px;
     position: absolute;
+    z-index: 2;
 }
 .wrapper h1,.wrapper p{
     position: relative;
@@ -129,7 +131,7 @@ h3{
     text-align: center;
     background-color: cadetblue;
     border-radius: 4px;
-    margin: auto;
+    margin: 0 30vw;
     font-style: italic;
     font-size: 3vw;
     line-height: 180%;
@@ -181,7 +183,6 @@ p {
 .reason-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 250px 0;
 }
 .reason-container {
@@ -460,14 +461,17 @@ input{
     width: auto !important;
     margin-top: 15px !important;
 }
+.colors-section,.reason-section{
+    padding:100px 0;
+}
 
 /* Tablet styles */
 @media (max-width: 600px) {
-    section{
-        max-width: 100vw;
-    }
     .colors-section,.reason-section{
         padding:50px 0;
+    }    
+    section{
+        max-width: 100vw;
     }
     .scroll-text span.fl {
         font-size: 30vw;
@@ -508,7 +512,6 @@ input{
         padding: 0 30px;
     }
     h1{
-        text-transform: uppercase;
         font-size: 55px;
         line-height: 110%;
         font-weight: 600;
@@ -519,13 +522,14 @@ input{
     }
     h3{
         opacity: 0.8;
-        font-size: 170px !important;
+        font-size: 170px; 
         color: #02ffcc;
         animation: glowing 20s linear infinite;    
         position: relative;
-        font-weight: 900 !important;
-        line-height: 100px;
-        margin-top: -60px !important;
+        font-weight: 900; 
+        line-height: 150px;
+        margin-top: -80px; 
+        margin-left: -60px;
     }
     .reason{
         width: 100vw;
@@ -556,6 +560,8 @@ input{
     .z,.x, .y{
         margin: 0px;
         width: 30vw;
+        border-radius: 50%;
+        overflow: hidden;
     }
     .m,.n{
         height: 60vw;
@@ -621,9 +627,6 @@ input{
 }
 /* Desktop styles */
 @media (min-width: 601px) and (max-width: 900px) {
-    swiper-outer{
-        display: none;
-    }
     h3 {
         font-size: 20vw;
     }
