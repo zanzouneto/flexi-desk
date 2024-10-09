@@ -66,7 +66,7 @@ window.addEventListener('scroll', function() {
     const formData = new FormData(event.target);
     const name = formData.get('name');
     const phone = formData.get('phone');
-    const woodColor = formData.get('woodColor');
+    const woodColor = formData.get('wood-color'); // Correct name
     const size = formData.get('size');
     const address = formData.get('address');
     const accessories = formData.getAll('accessories').join(', ');
@@ -81,15 +81,13 @@ window.addEventListener('scroll', function() {
         Accessories: ${accessories}
     `;
 
-    // Viber link
-    // const viberNumber = '+380684330020'; 
-    // const viberLink = `viber://chat?number=${viberNumber}&text=${encodeURIComponent(message)}`;
+    // Replace spaces with %20 for URL encoding
+    const encodedMessage = encodeURIComponent(message);
 
-    // Telegram link
+    // Telegram link (this assumes you're sending the message to a bot or user)
     const telegramUsername = 'zanzouneto'; 
-    const telegramLink = `https://t.me/${telegramUsername}?start=${encodeURIComponent(message)}`;
+    const telegramLink = `https://t.me/${telegramUsername}?start=${encodedMessage}`;
 
-    // Open the links in new tabs or windows
-    // window.open(viberLink, '_blank');
+    // Open the Telegram link
     window.open(telegramLink, '_blank');
 }

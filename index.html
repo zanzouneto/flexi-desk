@@ -275,22 +275,26 @@
             <!-- Phone Number -->
             <input type="tel" id="phone" name="phone" required placeholder="Phone number">
             <!-- Wood Color (multiple choice) -->
-            <label for="wood-color">Wood Color:</label>
-            <select id="wood-color" name="wood-color" required>
-              <option value="dark">Dark</option>
-              <option value="medium">Medium</option>
-              <option value="white">White</option>
-            </select>
+            <div class="check-div">
+                <label for="wood-color">Wood Color:</label>
+                <select id="wood-color" name="wood-color" required>
+                    <option value="dark">Dark</option>
+                    <option value="medium">Medium</option>
+                    <option value="white">White</option>
+                </select>
+            </div>
             <!-- Size (multiple choice) -->
-            <label for="size">Size:</label>
-            <select id="size" name="size" required>
-              <option value="small">Small (150 cm)</option>
-              <option value="medium">Medium (160 cm)</option>
-              <option value="large">Large (170 cm)</option>
-            </select>
+            <div class="check-div">
+                <label for="size">Size:</label>
+                <select id="size" name="size" required>
+                    <option value="small">Small (150 cm)</option>
+                    <option value="medium">Medium (160 cm)</option>
+                    <option value="large">Large (170 cm)</option>
+                </select>
+            </div>
             <!-- Accessories (checkboxes) -->
             <label>Accessories:</label>
-            <div>
+            <div class="list">
                 <div class="check-div">
                     <input type="checkbox" id="wire-tray" name="accessories" value="wire-tray">
                     <label for="wire-tray">Wire tray (500 UAH)</label>
@@ -305,8 +309,7 @@
                 </div>
             </div>
             <!-- Delivery Address -->
-            <label for="address">Delivery Address:</label>
-            <textarea id="address" name="address" required></textarea>
+            <textarea id="address" name="address" required placeholder="Delivery address"></textarea>
             <!-- Submit Button -->
             <button type="submit">Submit</button>
           </form>
