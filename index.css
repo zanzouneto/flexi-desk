@@ -391,6 +391,7 @@ video{
 .center{
     display: flex;
     justify-content: center;
+    padding-bottom: 10px;
 }
 
 
@@ -459,6 +460,7 @@ input{
     width: auto !important;
     margin-top: 15px !important;
 }
+
 /* Tablet styles */
 @media (max-width: 600px) {
     section{
@@ -518,7 +520,8 @@ input{
     h3{
         opacity: 0.8;
         font-size: 170px !important;
-        color: #ff02c8;
+        color: #02ffcc;
+        animation: glowing 20s linear infinite;    
         position: relative;
         font-weight: 900 !important;
         line-height: 100px;
@@ -582,7 +585,7 @@ input{
     :root{
         --swiper-pagination-bullet-inactive-color: #fffff4;
         --swiper-pagination-bullet-inactive-opacity: 1;
-        --swiper-pagination-color: #ff02c8;
+        --swiper-pagination-color: #02ffcc;
     }    
     swiper-container {
         scale: 0.8;
