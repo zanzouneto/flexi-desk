@@ -67,7 +67,7 @@ function handleSubmit(event) {
     const formData = new FormData(event.target);
     const name = formData.get('name');
     const phone = formData.get('phone');
-    const woodColor = formData.get('wood-color'); // Use the correct name attribute
+    const woodColor = formData.get('wood-color'); 
     const size = formData.get('size');
     const address = formData.get('address');
     const accessories = formData.getAll('accessories').join(', ');
