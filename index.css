@@ -328,6 +328,121 @@ video{
 .horizontal{
     display: block;
 }
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 150px 50px;
+    row-gap: 90px;
+}
+.product-preview {
+    width: 90vw;
+    margin: 0 auto;
+}
+.product-preview h2{
+    margin: 10px 0;
+}
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slides {
+    display: flex;
+    width: 100%; 
+}
+.product-image,.product-video {
+    border-radius: 10px;
+    min-width: 100%;
+    height: 60vh;
+    scale: 1;
+    transition: ease-in-out 0.8s;
+    object-fit: contain;
+}
+.product-image{
+    background-color: white;
+}
+.product-image:hover{
+    scale: 1.1;
+}
+.swiper-arrow{
+    position: absolute;
+    height: 100%;
+    top:0;
+    background-color: #ffffff00;
+    color:#00ffd5;
+    font-size: 50px;
+    font-weight: 900;
+    transition: ease-in-out 0.5s;
+    z-index: 20;
+}
+.swiper-arrow:hover{
+    color: #d0f53d;
+}
+.swiper-arrow:before,.swiper-arrow:active,.swiper-arrow:after{
+    background-color: #ffffff00;
+    animation: none;
+    opacity: 0;
+}
+.swiper-arrow:before,
+.swiper-arrow:after {
+    content: none; 
+}
+.swiper-arrow:hover:before,
+.swiper-arrow:hover:after,
+.swiper-arrow:active:before,
+.swiper-arrow:active:after {
+    background-color: transparent; 
+    animation: none; 
+    opacity: 0; 
+}
+.left-arrow {
+    left: 0;
+    padding-left: 20px;
+    text-align: left;
+}
+.right-arrow {
+    right: 0;
+    padding-right: 20px;
+    text-align: right;
+}
+.thumbnails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 55px;
+    align-items: center;
+}
+.thumb-split{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.thumbnail {
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 5px;
+    border: rgb(188, 188, 188) 1px solid;
+}
+.thumbnail:hover {
+    opacity: 1;
+}
+.row2nd{
+    flex-basis: 100%; 
+}
+.product-preview p{
+    font-size: 14px;
+}
 .colors{
     display: flex;
     flex-direction: row;

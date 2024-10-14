@@ -37,9 +37,10 @@ window.addEventListener('scroll', function() {
 });
 
 // Get all buttons with the class 'contact-trigger'
-const contactButtons = document.querySelectorAll('button');
+const contactButtons = document.querySelectorAll('button:not(.swiper-arrow)');
 const popupForm = document.querySelector('.popup');
 const closeButton = document.querySelector('.close');
+
 
 // Add click event to all buttons to show the popup
 contactButtons.forEach(button => {
@@ -59,6 +60,7 @@ window.addEventListener('click', function(event) {
         popupForm.style.display = 'none';
     }
 });
+
 
 // Handle form submission
 function handleSubmit(event) {
@@ -115,4 +117,34 @@ function handleSubmit(event) {
         console.error('Error:', error);
         alert('Failed to send order. Please try again later.');
     });
+}
+let currentSlides = {};
+
+function showSlide(slideIndex, productId) {
+    const slider = document.querySelector(`#${productId} .slider`);
+    const slides = document.querySelectorAll(`#${productId} .product-image`);
+    currentSlides[productId] = slideIndex - 1;
+    const slideWidth = slides[0].clientWidth;
+    slider.style.transform = `translateX(${-slideWidth * currentSlides[productId]}px)`;
+}
+
+function moveSlide(direction, productId) {
+    const slides = document.querySelectorAll(`#${productId} .product-image`);
+    const totalSlides = slides.length;
+
+    if (!currentSlides[productId]) {
+        currentSlides[productId] = 0;
+    }
+
+    currentSlides[productId] += direction;
+    
+    if (currentSlides[productId] >= totalSlides) {
+        currentSlides[productId] = 0;
+    } else if (currentSlides[productId] < 0) {
+        currentSlides[productId] = totalSlides - 1;
+    }
+    
+    const slideWidth = slides[0].clientWidth;
+    const slider = document.querySelector(`#${productId} .slider`);
+    slider.style.transform = `translateX(${-slideWidth * currentSlides[productId]}px)`;
 }
