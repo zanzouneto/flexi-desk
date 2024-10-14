@@ -363,13 +363,14 @@ video{
     height: 60vh;
     scale: 1;
     transition: ease-in-out 0.8s;
-    object-fit: contain;
 }
 .product-image{
+    object-fit: contain;
     background-color: white;
 }
 .product-video{
     pointer-events: none;
+    object-fit: cover;
 }
 .product-image:hover{
     scale: 1.1;
