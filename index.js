@@ -148,3 +148,9 @@ function moveSlide(direction, productId) {
     const slider = document.querySelector(`#${productId} .slider`);
     slider.style.transform = `translateX(${-slideWidth * currentSlides[productId]}px)`;
 }
+const video = document.querySelector('.product-video');
+video.muted = true;
+video.play().catch(error => {
+  // Handle autoplay issues here
+  console.log('Autoplay prevented:', error);
+});
