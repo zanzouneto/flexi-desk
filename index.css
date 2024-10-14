@@ -368,6 +368,9 @@ video{
 .product-image{
     background-color: white;
 }
+.product-video{
+    pointer-events: none;
+}
 .product-image:hover{
     scale: 1.1;
 }
@@ -746,6 +749,18 @@ label{
     .swiper-pagination-bullet-active {
         background: #00ffd5 ;
         opacity: 1;
+    }
+    .products{
+        margin: 20px 0;
+    }
+    .product-image,.product-video{
+        height: 50vh;
+    }
+    .thumbnails{
+        gap: 5px;
+    }
+    .thumb-split{
+        flex-wrap: wrap;
     }
 }
 /* Desktop styles */
